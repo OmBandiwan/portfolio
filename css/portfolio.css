@@ -1,0 +1,24 @@
+body{
+				background-color :#ff8bfc;
+				}
+.profile_img{
+				display:flex;
+				flex-direction:column;
+				justify-content:centre;
+				align-items:centre;
+				
+				border:2px solid;
+				border-radius:10%;
+				}
+a{
+			color:#9100ff;	
+			text-decoration:underline;
+				}
+				
+.text{
+				color:#760015;
+				}
+h1{
+				color:#ff002e;
+				text-shadow: 2px 2px 5px black;
+				}
