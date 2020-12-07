@@ -1,24 +1,109 @@
-body{
-				background-color :#ff8bfc;
-				}
-.profile_img{
-				display:flex;
-				flex-direction:column;
-				justify-content:centre;
-				align-items:centre;
-				
-				border:2px solid;
-				border-radius:10%;
-				}
-a{
-			color:#9100ff;	
-			text-decoration:underline;
-				}
-				
-.text{
-				color:#760015;
-				}
-h1{
-				color:#ff002e;
-				text-shadow: 2px 2px 5px black;
-				}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/*Html Default values*/
+* {
+	margin: 0;
+}
+
+/*declaring root variables*/
+
+:root {
+	--primary-color: #1F2937;
+	
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+/*container Property*/
+
+.container {
+	padding: 0rem 0rem;
+	max-width: 100%;
+	height: auto;
+}
+
+/*navigation panel section */
+
+.navigation {
+	position: relative;
+	background-color: var(--primary-color);
+	color: white;
+	padding: 1rem;
+	border-bottom-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	max-width: 100%;
+	height: auto;
+}
+.navigation .listPosition{
+	font-size:20px;
+	text-align: right;
+}
+
+.nav-list-item{
+
+}
+.sitename {
+	font-size: 3em;
+	text-decoration: none;
+	color: inherit;
+}
+
+.-inverted {
+	color: red;
+}
+
+.list-noBullets {
+	list-style: none;
+}
+
+.listInline {
+	display: inline;
+	padding: 0rem 0.5rem;
+}
+
+.nav-Link {
+	box-sizing: border-box;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	color: white;
+	
+}
+
+/*Header section*/
+.hover_blur{
+	max-width: 100%;
+	display: block;
+}
+.hero-header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/assets/header_bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:600px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.bg_name{
+	position: relative;
+	background: rgba(255,255,255,0.3);
+	padding: 0 59.5rem 0 3rem;
+	/*text-align:left;
+	font-size: 2rem;
+	justify-content: center;
+	font-weight: bolder;
+	color: whitesmoke;
+	margin-top: -2rem;
+	position: relative;
+	transform: translateY(-14rem);
+	margin-bottom:-2.5rem;*/
+}
+.hover_blur:hover{
+	webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(2px);
+}
+.test{
+	display: block;
+	background-color: blue;
+}
