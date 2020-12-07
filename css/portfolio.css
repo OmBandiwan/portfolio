@@ -77,10 +77,10 @@ body {
 }
 .hero-header{
 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/assets/header_bg.jpg);
-	background-position: center;
+	background-position: 0vw;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height:600px;
+	height:50vw;
 	display: flex;
 	justify-content: left;
 	align-items: center;
@@ -88,7 +88,7 @@ body {
 .bg_name{
 	position: relative;
 	background: rgba(255,255,255,0.3);
-	padding: 0 59.5vw 0 3vw;
+	padding: 0 70.657vw 0 3vw;
 	/*text-align:left;
 	font-size: 2rem;
 	justify-content: center;
