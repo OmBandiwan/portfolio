@@ -35,7 +35,8 @@ body {
 */
 /*navigation panel section */
 
-.navigation {
+.navbar {
+	/*
 	position: relative;
 	background-color: var(--primary-color);
 	color:var(--font-white);
@@ -43,9 +44,78 @@ body {
 	border-bottom-left-radius: 1vw;
 	border-top-right-radius: 1vw;
 	max-width: 100%;
-	height: auto;
+	height: auto;*/
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--primary-color);
+	align-items: center;
+	color: var(--font-white);
+
 }
-.navigation .listPosition{
+
+/*Brand-Name*/
+.sitename{	
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: inherit;
+	margin: .5rem;
+}
+
+.site-refresh{
+	text-decoration: none;
+	color:var(--font-white);
+}
+
+.-inverted {
+	color: red;
+}
+
+.navbar-links ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.navbar-links li{
+	list-style: none;
+}
+
+.navbar-links li a{
+	text-decoration: none;
+	color: var(--font-white);
+	padding: 1rem;
+	display: block;
+}
+
+.navbar-links li:hover{
+	background-color: var(--link-hover);
+}
+
+/* defined properties for the hamburger menu*/
+
+.toggle-button{
+	position: absolute;
+	top: 0.75rem;
+	right: 1rem;
+	display:none;					
+	flex-direction: column;
+	justify-content: space-between;
+	width: 31px;
+	height: 21px;
+}
+
+/*properties of the bars*/
+
+.toggle-button .bar{
+	height: 3px;
+	width: 100%;
+	background-color: var(--font-white);
+	border-radius: 10px;
+}
+
+
+/*
+.navbar .listPosition{
 	font-size:20vm;
 	text-align: right;
 }
@@ -54,10 +124,7 @@ body {
     font-weight: bold;
 }
 
-.site-refresh{
-	text-decoration: none;
-	color:var(--font-white);
-}
+
 
 .sitename {
 	font-size: 3vw;
@@ -65,9 +132,6 @@ body {
 	color: inherit;
 }
 
-.-inverted {
-	color: red;
-}
 
 .list-noBullets {
 	list-style: none;
@@ -88,6 +152,9 @@ body {
 .nav-Link:hover{
 	color: var(--link-hover);
 }
+*/
+
+/*_______________________________________________________________________________________________________________________________*/
 
 /*Header section*/
 .hero-header{
@@ -115,6 +182,8 @@ body {
 	transform: translateY(-14rem);
 	margin-bottom:-2.5rem;*/
 }
+
+/*_______________________________________________________________________________________________________________________________*/
 
 /*sections*/
 
@@ -147,6 +216,8 @@ p{
 	text-align: center;
 	font-size: var(--font-content);
 }
+
+/*_______________________________________________________________________________________________________________________________*/
 
 /** footers **/
 
@@ -185,3 +256,39 @@ p{
     font-weight: bolder;
     font-size: large;
 }
+/*_______________________________________________________________________________________________________________________________*/
+
+/*responsive hamburger menu*/
+
+
+/*media query : allows us to say when a certain conditions are met 
+run the code inside her if not then don't. */
+
+@media ( max-width:600px){
+	.toggle-button{
+		display: flex;
+	}
+
+	.navbar-links{
+		display: none;
+		width: 100%;
+	}
+
+	.navbar{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.navbar-links ul{
+		width: 100%;
+		flex-direction: column;
+	}
+	.navbar-links li{
+		text-align: center;
+	}
+	.navbar-links li a{
+		padding:0.5rem 1rem ;
+	}
+
+	.navbar-links.active{
+		display: flex;
+	}
