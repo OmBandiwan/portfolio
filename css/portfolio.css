@@ -127,9 +127,10 @@ body {
 
 .title-logo-img{
 	display: block;
-	max-width: 350px;
+	max-width: 50vw;
 	margin: auto;
 	text-align: center;
+	justify-content: center;
 }
 .ow{
 	background-color:var(--primary-color-lite);
@@ -154,13 +155,13 @@ p{
     padding: 2rem 1rem;
     text-align: center;
     color:var(--primary-color);
-	border:1rem;
+	border:1vw;
 	
 }
 .footer-content-head {
     font-weight: bolder;
 	font-size: large;
-	padding-bottom: 1rem;
+	padding-bottom: 1vw;
 }
 
 .footer .link {
@@ -169,12 +170,12 @@ p{
 }
 
 .footer ul {
-    padding-inline-start: 0px;
+    padding-inline-start: 0vw;
 }
 
 .footer-sm-icon {
-	width: 30px;
-	padding-bottom: 1rem;
+	width: 4vw;
+	padding-bottom: 1vw;
 }
 
 
