@@ -8,6 +8,11 @@
 
 :root {
 	--primary-color: #1F2937;
+	--primary-color-lite:#1f29371f;
+	--link-hover: #4c678d;
+	--font-white:whitesmoke;
+	--font-head: 3vw;
+	--font-content:1.5vw;
 	
 }
 
@@ -21,14 +26,19 @@ body {
 	padding: 0vw 0vw;
 	max-width: 100%;
 	height: auto;
-}
+}/*
+.container-center {
+	max-width: 600px;
+	margin: auto;
 
+}
+*/
 /*navigation panel section */
 
 .navigation {
 	position: relative;
 	background-color: var(--primary-color);
-	color: white;
+	color:var(--font-white);
 	padding: 1vw;
 	border-bottom-left-radius: 1vw;
 	border-top-right-radius: 1vw;
@@ -40,9 +50,15 @@ body {
 	text-align: right;
 }
 
-.nav-list-item{
-
+.link-active {
+    font-weight: bold;
 }
+
+.site-refresh{
+	text-decoration: none;
+	color:var(--font-white);
+}
+
 .sitename {
 	font-size: 3vw;
 	text-decoration: none;
@@ -66,15 +82,14 @@ body {
 	box-sizing: border-box;
 	text-decoration: none;
 	padding: 0.5vw 1vw;
-	color: white;
+	color: var(--font-white);
 	
+}
+.nav-Link:hover{
+	color: var(--link-hover);
 }
 
 /*Header section*/
-.hover_blur{
-	max-width: 100%;
-	display: block;
-}
 .hero-header{
 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/assets/header_bg.jpg);
 	background-position: 0vw;
@@ -100,11 +115,70 @@ body {
 	transform: translateY(-14rem);
 	margin-bottom:-2.5rem;*/
 }
-.hover_blur:hover{
-	webkit-filter: blur(4px); /* Chrome, Safari, Opera */
-    filter: blur(2px);
-}
-.test{
+
+/*sections*/
+
+.section{
+	
 	display: block;
-	background-color: blue;
+	padding: 2rem;
+	
+}
+
+.title-logo-img{
+	display: block;
+	max-width: 350px;
+	margin: auto;
+	text-align: center;
+}
+.ow{
+	background-color:var(--primary-color-lite);
+}
+
+h1{
+	padding-top: 2rem;
+	text-align: center;
+	font-size: var(--font-head) ;
+	
+}
+p{
+	padding-top: 1rem;
+	text-align: center;
+	font-size: var(--font-content);
+}
+
+/** footers **/
+
+.footer {
+   /** background-color: var(--primary-color);**/
+    padding: 2rem 1rem;
+    text-align: center;
+    color:var(--primary-color);
+	border:1rem;
+	
+}
+.footer-content-head {
+    font-weight: bolder;
+	font-size: large;
+	padding-bottom: 1rem;
+}
+
+.footer .link {
+	text-decoration: none;
+    color:black;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+.footer-sm-icon {
+	width: 30px;
+	padding-bottom: 1rem;
+}
+
+
+.footer-header {
+    font-weight: bolder;
+    font-size: large;
 }
