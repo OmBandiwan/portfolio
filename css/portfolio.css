@@ -129,18 +129,14 @@ body {
 	transform: rotate(45deg) translate(-8px, -5px);
   }
 
+.link-active {
+		font-weight: bolder;
+}
 /*
 .navbar .listPosition{
 	font-size:20vm;
 	text-align: right;
 }
-
-.link-active {
-    font-weight: bold;
-}
-
-
-
 .sitename {
 	font-size: 3vw;
 	text-decoration: none;
