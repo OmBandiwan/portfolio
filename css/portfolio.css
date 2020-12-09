@@ -175,9 +175,11 @@ p{
 
 .footer-sm-icon {
 	width: 4vw;
-	padding-bottom: 1vw;
 }
 
+.footer-ico{
+	padding-bottom: 1vw;
+}
 
 .footer-header {
     font-weight: bolder;
