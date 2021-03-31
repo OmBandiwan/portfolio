@@ -7,4 +7,4 @@ toggleButton.addEventListener('click', () => {
 /*animation for toggle botton*/
 function myFunction(x) {
     x.classList.toggle("change");
-  }
+}
