@@ -219,7 +219,7 @@ a{
 	background-color:var(--primary-color-lite);
 }
 
-h1{
+figcaption{
 	padding-top: 2rem;
 	text-align: center;
 	font-size: var(--font-head) ;
