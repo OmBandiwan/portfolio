@@ -19,6 +19,9 @@
 body {
 	font-family: 'Raleway', sans-serif;
 }
+a{
+	text-decoration: none;
+}
 
 /*container Property*/
 
@@ -228,6 +231,17 @@ p{
 	font-size: var(--font-content);
 }
 
+.text-content{
+	border: 2px solid #1F2937 ;
+	border-radius: 50px;
+	padding: 9px;
+	color: var(--primary-color);
+	font-size: var(--font-content);
+}
+.text-content:hover{
+	background-color: #1F2937;
+	color: var(--font-white);
+}
 /*_______________________________________________________________________________________________________________________________*/
 
 /** footers **/
