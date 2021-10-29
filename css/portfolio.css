@@ -11,8 +11,8 @@
 	--primary-color-lite:#1f29371f;
 	--link-hover: #4c678d;
 	--font-white:whitesmoke;
-	--font-head: 3vw;
-	--font-content:2vw;
+	--font-head: 5vh;
+	--font-content:2vh;
 	
 }
 
@@ -106,8 +106,8 @@ a{
 	display:none;					
 	flex-direction: column;
 	justify-content: space-between;
-	width: 31px;
-	height: 21px;
+	width: 8vw;
+	height: 3.5vh;
 }
 
 /*properties of the bars*/
@@ -176,6 +176,7 @@ a{
 	background-position: 0vw;
 	background-repeat: no-repeat;
 	background-size: cover;
+	width: 100%;
 	height:50vw;
 	display: flex;
 	justify-content: left;
@@ -210,7 +211,9 @@ a{
 
 .title-logo-img{
 	display: block;
+	width:100%;
 	max-width: 50vw;
+	height: 30vh;
 	margin: auto;
 	text-align: center;
 	justify-content: center;
@@ -223,7 +226,6 @@ figcaption{
 	padding-top: 2rem;
 	text-align: center;
 	font-size: var(--font-head) ;
-	
 }
 p{
 	padding-top: 1rem;
@@ -279,7 +281,10 @@ p{
 }
 
 .footer-sm-icon {
+	height:var(--font-head);
+	max-height: 100%;
 	width: 4vw;
+	max-width: 100%;
 }
 
 .footer-ico{
