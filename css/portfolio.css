@@ -11,8 +11,9 @@
 	--primary-color-lite:#1f29371f;
 	--link-hover: #4c678d;
 	--font-white:whitesmoke;
-	--font-head: 5vh;
-	--font-content:2vh;
+	--font-head: 4vh;
+	--font-content:2.5vh;
+	--footer:#1f2937e5;
 	
 }
 
@@ -218,6 +219,12 @@ a{
 	text-align: center;
 	justify-content: center;
 }
+
+#blog-img{
+	height:100% ;
+	width:100%;
+}
+
 .ow{
 	background-color:var(--primary-color-lite);
 }
@@ -261,9 +268,10 @@ p{
    /** background-color: var(--primary-color);**/
     padding: 2rem 1rem;
     text-align: center;
-    color:var(--primary-color);
+	letter-spacing: 2px;
+    color:var(--font-white);
 	border:1vw;
-	
+	background-color: var(--footer);
 }
 .footer-content-head {
     font-weight: bolder;
